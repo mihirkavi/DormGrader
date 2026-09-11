@@ -1,5 +1,7 @@
 # DormGrader
 
+<p><img src="assets/brand/logo.png" alt="DormGrader logo" width="96" height="96"></p>
+
 DormGrader is a USC Housing mobile-application project focused on helping students evaluate and compare campus housing options.
 
 [View the website prototype](https://mihirkavi.github.io/DormGrader/)
@@ -25,3 +27,11 @@ Open `index.html` in a browser for the website prototype. Open the reports, spre
 ## License
 
 No license file is included in this repository. This README grants no additional reuse or redistribution permissions; contact the repository owner about permitted use.
+
+<!-- project-artwork:start -->
+## Project artwork
+
+![Conceptual artwork for DormGrader](assets/brand/cover.png)
+
+Conceptual project artwork. [Asset files, design notes, and generation prompts](assets/brand/README.md).
+<!-- project-artwork:end -->
