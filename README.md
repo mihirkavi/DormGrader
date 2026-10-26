@@ -20,10 +20,10 @@
 </p>
 
 <p align="center">
-  <img alt="Status: academic concept" src="https://img.shields.io/badge/status-academic%20concept-6b6b6b?style=flat-square">
-  <img alt="Course: USC ISE 515" src="https://img.shields.io/badge/USC-ISE%20515-111111?style=flat-square">
-  <img alt="Single-file HTML prototype" src="https://img.shields.io/badge/prototype-single%20HTML%20file-111111?style=flat-square">
-  <img alt="License: none" src="https://img.shields.io/badge/license-none-6b6b6b?style=flat-square">
+  <img alt="Status: academic concept" src="https://img.shields.io/badge/status-academic%20concept-f4c430?style=flat-square">
+  <img alt="Course: USC ISE 515" src="https://img.shields.io/badge/USC-ISE%20515-12121a?style=flat-square">
+  <img alt="Single-file HTML prototype" src="https://img.shields.io/badge/prototype-single%20HTML%20file-ff9f1c?style=flat-square">
+  <img alt="License: none" src="https://img.shields.io/badge/license-none-a0a0b0?style=flat-square">
 </p>
 
 <p align="center">
