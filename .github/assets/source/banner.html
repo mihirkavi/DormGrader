@@ -1,0 +1,67 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>DormGrader banner</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* DormGrader identity: the dorm report card. Colors and fonts from the live prototype's :root. */
+:root{
+  --bg:#fbf6e9; --bg2:#f6edd4; --ink:#12121a; --muted:#5b5a66; --gold:#f4c430; --amber:#ff9f1c; --goldtext:#9a6a00;
+  --card:#ffffff; --rule:rgba(18,18,26,.12); --tower:#12121a; --window:#ffb000;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0a0a0f; --bg2:#1a1a2e; --ink:#fafafa; --muted:#a0a0b0; --goldtext:#f4c430;
+  --card:#12121a; --rule:rgba(250,250,250,.1); --tower:#1f1f30; --window:#f4c430;
+}}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1600px;height:600px;overflow:hidden}
+body{font-family:Outfit,sans-serif;color:var(--ink);position:relative;
+  background:radial-gradient(70% 90% at 85% 10%,rgba(244,196,48,.22),transparent 60%),linear-gradient(160deg,var(--bg) 0%,var(--bg2) 100%)}
+.left{position:absolute;left:96px;top:0;bottom:0;width:910px;display:flex;flex-direction:column;justify-content:center}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:30px}
+.brand .mark{width:52px;height:52px;border-radius:14px;background:#fffdf6;display:grid;place-items:center;box-shadow:0 0 0 1.5px var(--rule)}
+.brand .mark img{width:56px;height:56px}
+.brand b{font-family:'Playfair Display';font-weight:700;font-size:36px;color:var(--goldtext)}
+.eyebrow{font-weight:600;font-size:17px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+h1{font-family:'Playfair Display';font-weight:900;font-size:80px;line-height:1.04;letter-spacing:-.015em}
+h1 em{font-style:italic;font-weight:700;background:linear-gradient(135deg,#f4c430,#ff9f1c);-webkit-background-clip:text;color:transparent;padding-right:6px}
+p{margin-top:26px;font-size:26px;line-height:1.4;color:var(--muted);max-width:720px}
+.chips{display:flex;gap:10px;margin-top:30px}
+.chips span{font-weight:500;font-size:18px;padding:9px 18px;border-radius:50px;border:1.5px solid var(--rule);background:var(--card)}
+.chips span:first-child{background:linear-gradient(135deg,#f4c430,#ff9f1c);color:#12121a;border-color:transparent;font-weight:600}
+/* report card */
+.rc{position:absolute;right:110px;top:90px;width:470px;background:var(--card);border-radius:20px;
+  box-shadow:0 30px 60px rgba(18,18,26,.18),0 0 0 1.5px var(--rule);transform:rotate(2.2deg);padding:30px 34px;overflow:hidden}
+.rc::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:linear-gradient(90deg,#f4c430,#ff9f1c)}
+.rc h3{font-family:'Playfair Display';font-size:30px;font-weight:700;margin-top:6px}
+.rc .sub{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.rc ul{list-style:none;margin-top:22px}
+.rc li{display:flex;justify-content:space-between;align-items:baseline;padding:15px 0;line-height:1;border-top:1.5px dashed var(--rule);font-size:21px;font-weight:500}
+.rc li i{font-style:normal;font-family:'Playfair Display';font-weight:900;font-size:26px;line-height:1;width:46px;text-align:right;color:var(--goldtext)}
+.stamp{position:absolute;right:58px;top:56px;width:150px;height:150px;border-radius:50%;border:5px solid var(--amber);
+  display:grid;place-items:center;transform:rotate(-12deg);background:var(--card);z-index:3;box-shadow:0 0 0 7px var(--card),0 0 0 9px rgba(255,159,28,.45)}
+.stamp b{font-family:'Playfair Display';font-weight:900;font-size:84px;line-height:1;color:var(--amber);margin-top:-14px}
+.stamp small{position:absolute;bottom:20px;font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--amber)}
+.note{position:absolute;right:150px;bottom:30px;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+</style></head>
+<body>
+<div class="left">
+  <div class="brand"><span class="mark"><img src="../../../assets/brand/logo.png" alt=""></span><b>DormGrader</b></div>
+  <div class="eyebrow">USC ISE 515 · Academic concept</div>
+  <h1>Know your dorm<br><em>before</em> you move in.</h1>
+  <p>A student-review concept for rating, comparing and choosing campus housing.</p>
+  <div class="chips"><span>Resident reviews</span><span>Compare halls</span><span>Ask before you move</span></div>
+</div>
+<div class="rc">
+  <div class="sub">Sample report card</div>
+  <h3>Your Residence Hall</h3>
+  <ul>
+    <li>Cleanliness<i>A−</i></li>
+    <li>Location<i>A</i></li>
+    <li>Noise<i>B</i></li>
+    <li>Social life<i>A</i></li>
+    <li>Value<i>B+</i></li>
+  </ul>
+</div>
+<div class="stamp"><b>A</b><small>OVERALL</small></div>
+<div class="note">Illustration · not real ratings</div>
+</body></html>
